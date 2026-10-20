@@ -5,6 +5,7 @@
     "description": "修复把快捷键绑定到鼠标侧键后，必须先按下其他按键才会生效的问题（例如 AE2 终端类模组的快捷键）。侧键按下与松开都立刻触发，仅客户端生效，服务端无需安装。思路参考 asdflj 的 MouseSideButtonFix（Forge 1.7.10），实现针对 1.12.2 的事件时序重新编写，与该模组不是同一个模组。",
     "version": "${version}",
     "mcversion": "${mcversion}",
+    "logoFile": "assets/sidekeyrelay/textures/logo.png",
     "url": "",
     "authorList": [
       "AutoMods"

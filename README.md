@@ -1,5 +1,7 @@
 # SideKeyRelay（侧键中继）
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 适用于 **Minecraft Forge 1.12.2** 的小型客户端模组，解决鼠标侧键快捷键"要再按一个键才生效"的问题。
 
 > 改名说明：本项目曾用名 `MouseSideButtonFix`。为避免与 [asdflj 的 MouseSideButtonFix（Forge 1.7.10）](https://www.mcmod.cn/class/26011.html) 重名，现已更名为 **SideKeyRelay**，modid 为 `sidekeyrelay`。两者只有修复思路同源，代码实现（事件时序、补发时机）是为 1.12.2 重新编写的，**不是同一个模组，也请只保留其中一个**。
@@ -69,4 +71,21 @@ src/main/resources/
 
 ## 许可
 
-发布前请在本仓库补充 LICENSE 文件（如 MIT、Apache-2.0 或自定条款），并在上方注明。
+本模组采用 **MIT License**，全文见 [LICENSE](LICENSE)。
+
+一句话版：**随便用、随便改、随便分发，进整合包、二次发布都可以，只要保留版权声明和这份许可文本。**
+
+| 你可以 | 请注意 |
+| --- | --- |
+| 复制、修改、二开、闭源分发自己的版本 | 所有副本都要保留 `Copyright (c) 2026 AutoMods` 与 MIT 全文 |
+| 原样打进整合包、任意渠道分发 jar | 改动后的问题由改动方自行负责 |
+| 用于学习、教学、拆解 | 软件按"现状"提供，不含任何担保 |
+
+几点补充：
+
+- **和 Forge 不冲突。** Minecraft Forge 1.12.2 自身是 LGPL-2.1，它只约束 Forge 自己的衍生代码；模组作为调用其公开 API 的独立程序，用 MIT 发布是社区通行做法。
+- **和参考项目不冲突。** 本项目只借鉴了 asdflj 的 MouseSideButtonFix（1.7.10）的修复思路，全部 130 行实现是为 1.12.2 的事件时序重新编写的，不存在代码衍生关系（思路本身不受版权保护）。但今后若往本仓库引入他人代码片段，要先确认那份代码的许可证——GPL 类许可会把整个仓库一起拉过去。
+- **Minecraft EULA 是另一回事。** Mojang 的用户协议对"直接卖模组换钱"另有限制（各分发平台的分成计划属例外），这条限制与 MIT 无关，商业化前请自行核对最新条款。
+- **图标。** `src/main/resources/assets/sidekeyrelay/textures/logo.png` 为本项目自制像素画，随代码一并按 MIT 授权。
+
+想要更严格的条款可以换成 **Apache-2.0**（多一条明确的专利授权，并要求改动方注明改了什么）或 **GPL-3.0**（任何衍生模组必须以同样许可开源，代价是不少整合包作者会直接绕开）。对这个"越小越好用"的客户端工具来说，MIT 的分发摩擦最低。
